@@ -13,7 +13,9 @@ body{
     background: linear-gradient(90deg, #4540DF 20%,  #0D0D38 100%);
     font-family: 'Archivo', sans-serif;
 }
-
+h1{
+    color: aliceblue;
+}
 #logo{
     padding:10px;
     margin-top: 10px;
@@ -140,3 +142,33 @@ h1{
 
 }
 
+@media screen and (min-width: 900px){
+  
+    .collection{
+        padding: 50px 20px;
+        margin: 0 auto;
+      
+    }
+    .collectionImg{
+        max-width: 100%;
+        border-radius: 10px;
+        position: relative;
+        transition: transform 250ms;
+        cursor: pointer;
+        background-color: black;
+        
+    }
+    #gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 20px;
+    }
+    
+    .collectionImg:hover{
+        transform: translateY(-2px);
+        box-shadow: 3px 3px 10px black;
+        opacity: 0.5;
+    }
+    
+
+}
