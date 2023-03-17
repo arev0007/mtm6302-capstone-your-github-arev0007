@@ -1,0 +1,71 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+box-sizing: inherit;
+}
+body{
+    margin: 0 auto;
+    padding-left:30px;
+    padding-right:30px;
+    background: linear-gradient(90deg, #4540DF 20%,  #0D0D38 100%);
+    font-family: 'Archivo', sans-serif;
+}
+
+
+.collection{
+    padding: 50px 20px;
+    margin: 0 auto;
+  
+}
+.collectionImg{
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 250ms;
+    cursor: pointer;
+    background-color: black;
+    
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.collectionImg:hover{
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 10px black;
+    opacity: 0.5;
+}
+
+#pokecard{
+    background-color: black ;
+    padding: 5px 20px;
+    width: min-content;
+    border-radius: 40px solid #FFC906;
+  
+}
+
+.pokeball{
+    height: 50px;
+    position: relative;
+    left: 95%;
+    bottom: 480px;
+}
+
+
+.pokecolor {
+    height: 50px;
+    display: none;
+}
+
+.name-ch{
+    color: black;
+    position: relative;
+    left: 380px;
+    top: 450px;
+   
+}
