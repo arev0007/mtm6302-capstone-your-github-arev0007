@@ -24,7 +24,6 @@ h1{
 .collection{
     padding: 50px 20px;
     margin: 0 auto;
-  
 }
 .collectionImg{
     max-width: 100%;
@@ -33,7 +32,6 @@ h1{
     transition: transform 250ms;
     cursor: pointer;
     background-color: black;
-    
 }
 #gallery{
     display: grid;
@@ -57,7 +55,6 @@ h1{
     width: min-content;
     border-radius: 100px solid #FFC906;
     height: 900px;
-    
 }
 .cardinfo{
     position: relative;
@@ -139,7 +136,6 @@ h1{
     float: left;
     padding: 10px;
     margin: 5px;
-
 }
 
 @media screen and (min-width: 900px){
@@ -156,7 +152,6 @@ h1{
         transition: transform 250ms;
         cursor: pointer;
         background-color: black;
-        
     }
     #gallery{
         display: grid;
