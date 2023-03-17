@@ -14,7 +14,11 @@ body{
     font-family: 'Archivo', sans-serif;
 }
 
-
+#logo{
+    padding:10px;
+    margin-top: 10px;
+}
+/*gallery*/
 .collection{
     padding: 50px 20px;
     margin: 0 auto;
@@ -41,31 +45,98 @@ body{
     opacity: 0.5;
 }
 
+/* Pokecard*/
+h1{
+    padding: 10px;
+}
 #pokecard{
     background-color: black ;
-    padding: 5px 20px;
+    padding: 10px 20px;
     width: min-content;
-    border-radius: 40px solid #FFC906;
-  
+    border-radius: 100px solid #FFC906;
+    height: 900px;
+    
+}
+.cardinfo{
+    position: relative;
+    z-index: 1;
+    bottom: 310px;
+    height: 250px;
 }
 
 .pokeball{
-    height: 50px;
+    height: 40px;
     position: relative;
-    left: 95%;
-    bottom: 480px;
+    left: 460px;
+    bottom: 610px;
 }
 
 
 .pokecolor {
-    height: 50px;
-    display: none;
+    height: 40px;
+    position: relative;
+    left: 460px;
+    bottom: 610px;
+    visibility: hidden;
 }
+
+.show{
+    visibility: visible;
+}
+
+
 
 .name-ch{
     color: black;
     position: relative;
-    left: 380px;
-    top: 450px;
-   
+    padding: 10px;
+    z-index: 3;
+    top: 20px;
+    font-family: 'Apex New Bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
 }
+
+.box-img{
+    position: relative;
+    z-index: 2;
+    left: 110px;
+    top: 40px;
+}
+
+.character-img{
+    padding: 20px;
+    font-family: 'Apex New Bold', sans-serif;
+}
+.code-ch{
+    color: #FFC906;
+    position: relative;
+    z-index: 3;
+    bottom:320px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#square-conteiner{
+    background-color: #FFC906;
+    border-radius: 10px;
+    position: relative;
+    bottom: 330px;
+    padding: 10px;
+}
+
+.maindata{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 10px;
+}
+
+.text2{
+    float: left;
+    padding: 10px;
+    margin: 5px;
+
+}
+

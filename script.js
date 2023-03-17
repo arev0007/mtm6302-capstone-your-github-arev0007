@@ -19,3 +19,11 @@ imageIndexes.forEach(i => {
 });
 
 
+
+const buttton = document.getElementById('button')
+const buttonColor = document.getElementById('buttonColor')
+button.addEventListener('click', function() {
+    button.innerHTML = 
+    `<img class="pokecolor" src="css/images/pokecolor.png" alt="character" />`
+    buttton.classList.add('show')
+  })
