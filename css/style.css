@@ -6,164 +6,109 @@ html{
 *:after{
 box-sizing: inherit;
 }
-body{
+
+body {
     margin: 0 auto;
     padding-left:30px;
     padding-right:30px;
     background: linear-gradient(90deg, #4540DF 20%,  #0D0D38 100%);
     font-family: 'Archivo', sans-serif;
 }
-h1{
-    color: aliceblue;
-}
-#logo{
-    padding:10px;
-    margin-top: 10px;
-}
-/*gallery*/
-.collection{
+
+.container {
     padding: 50px 20px;
     margin: 0 auto;
 }
-.collectionImg{
-    max-width: 100%;
-    border-radius: 10px;
-    position: relative;
-    transition: transform 250ms;
-    cursor: pointer;
-    background-color: black;
+
+#logo{
+    padding: 30px;
 }
-#gallery{
+#logo:hover img{
+    transform: scale(1.1);
+}
+
+h1 {
+    color: rgb(22, 19, 19);
+    font-size: 54px;
+    padding: 20px;
+}
+.progress {
+    position: relative;
+    bottom: 25px;
+}
+#pokedex {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
+    padding-inline-start: 0;
 }
 
-.collectionImg:hover{
-    transform: translateY(-2px);
-    box-shadow: 3px 3px 10px black;
-    opacity: 0.5;
-}
-
-/* Pokecard*/
-h1{
-    padding: 10px;
-}
-#pokecard{
-    background-color: black ;
-    padding: 10px 20px;
-    width: min-content;
-    border-radius: 100px solid #FFC906;
-    height: 900px;
-}
-.cardinfo{
-    position: relative;
-    z-index: 1;
-    bottom: 310px;
-    height: 250px;
-}
-
-.pokeball{
-    height: 40px;
-    position: relative;
-    left: 460px;
-    bottom: 610px;
-}
-
-
-.pokecolor {
-    height: 40px;
-    position: relative;
-    left: 460px;
-    bottom: 610px;
-    visibility: hidden;
-}
-
-.show{
-    visibility: visible;
-}
-
-
-
-.name-ch{
-    color: black;
-    position: relative;
-    padding: 10px;
-    z-index: 3;
-    top: 20px;
-    font-family: 'Apex New Bold', sans-serif;
-    text-transform: uppercase;
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #121117;
+    color: rgb(246, 244, 239);
     text-align: center;
-    font-size: 1em;
-}
-
-.box-img{
-    position: relative;
-    z-index: 2;
-    left: 110px;
-    top: 40px;
-}
-
-.character-img{
-    padding: 20px;
-    font-family: 'Apex New Bold', sans-serif;
-}
-.code-ch{
-    color: #FFC906;
-    position: relative;
-    z-index: 3;
-    bottom:320px;
-    text-align: center;
-    font-size: 3em;
-}
-
-#square-conteiner{
-    background-color: #FFC906;
     border-radius: 10px;
-    position: relative;
-    bottom: 330px;
-    padding: 10px;
 }
 
-.maindata{
+.card:hover {
+    transform: scale(1.1);
+    background-color: #141125;
+    cursor: pointer;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: rgb(246, 231, 14);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.card-image {
+    height: 190px;
+    
+}
+
+/*popup*/
+
+.popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121117;
+    opacity: 0.95;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 700;
 }
 
-.text2{
-    float: left;
-    padding: 10px;
-    margin: 5px;
+#closeBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
-@media screen and (min-width: 900px){
-  
-    .collection{
-        padding: 50px 20px;
-        margin: 0 auto;
-      
-    }
-    .collectionImg{
-        max-width: 100%;
-        border-radius: 10px;
-        position: relative;
-        transition: transform 250ms;
-        cursor: pointer;
-        background-color: black;
-    }
-    #gallery{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        grid-gap: 20px;
-    }
-    
-    .collectionImg:hover{
-        transform: translateY(-2px);
-        box-shadow: 3px 3px 10px black;
-        opacity: 0.5;
-    }
-    
+button{
+    background-color: rgb(255, 225, 0);
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    transition: transform 100ms;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 2px white;
 
 }
