@@ -45,12 +45,13 @@ h1 {
 
 .card {
     list-style: none;
-    padding: 40px;
+    padding: 70px;
     background-color: #121117;
     color: rgb(246, 244, 239);
     text-align: center;
     border-radius: 10px;
 }
+
 
 .card:hover {
     transform: scale(1.1);
@@ -64,13 +65,18 @@ h1 {
     font-weight: normal;
 }
 .card-subtitle {
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 15px;
     color: rgb(246, 231, 14);
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 15px;
-}
+    text-align: left;
+    position: relative;
+    left: 50px;
+    
 
+}
 .card-image {
     height: 190px;
     
@@ -105,10 +111,17 @@ button{
     color: white;
     border-radius: 3px;
     transition: transform 100ms;
+    font-size: 30px;
 }
 button:hover{
     cursor: pointer;
     transform: translateY(-1px);
     box-shadow: 0px 1px 2px white;
+}
 
+
+#pokeButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

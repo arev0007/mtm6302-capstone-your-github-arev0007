@@ -15,6 +15,7 @@ const displayPokemon = (pokemon) => {
         )
         .join('');
     pokedex.innerHTML = pokemonHTMLString;
+
 };// retrieve an array with the image, name, and type info
 
 //select poke -poke info
@@ -31,6 +32,7 @@ const selectPokemon = async (id) => {
 // display popup
 const displayPopup = (pokemon) => {
     const type = pokemon.types.map((type) => type.type.name).join(', ');
+    const abilities = pokemon.abilities.map((ability) => ability.ability.name).join(', ');
     const image = pokemon.sprites['front_default'];
     const htmlString = `
         <div class="popup">
@@ -40,7 +42,8 @@ const displayPopup = (pokemon) => {
                 <h2 class="card-title">${pokemon.name}</h2>
                 <p class="card-subtitle">Type: ${type}</p>
                 <p class="card-subtitle">Height: ${pokemon.height} | Weight: ${pokemon.weight}</p>
-            </div>
+                <p class="card-subtitle">Abilities: ${abilities}</p>
+                </div>
         </div>
     `;
     pokedex.innerHTML = htmlString + pokedex.innerHTML;
