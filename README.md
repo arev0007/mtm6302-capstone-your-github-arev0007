@@ -23,7 +23,7 @@ Part 3
 The gallery is created using JavaScript. Interaction involves animation that displays information about the characters. When a character is selected, a card appears showing specific information about it. A Pokeball is created as a button to catch the character. The Pokeball changes color when the user clicks on it.
 
 
-Part 4
+Capstone Project - Part 4
 The Pokedex gallery was created by using the PokeAPI to fetch information about the Pokemon characters as well as to display it in a grid. 
 
 A number of functions were defined to handle different aspects:
